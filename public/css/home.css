@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #3fb1a7;
+    color: white;
+    font-size: 30px;
+  }
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0,0.75), rgba(0,0,0,0,0.75));
+    background-image: url(../img/home.jpg);
+    background-position: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* efeito no nav bar com linha ao passar o mouse*/
+
+.navbar ul li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .navbar ul li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .content{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50);
+      text-align: center;
+      color: #fff;
+
+  }
+
+  .content h1{
+      font-size: 70px;
+      margin-top: 80px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #000;
+      font-size: 3em; color: #fffdd9;
+  }
+
+  .content p{
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 25px;
+  }
+
+  button{
+      width: 200px;
+      padding: 15px 0;
+      text-align: center;
+      margin: 20px 10px;
+      border-radius: 25px;
+      font-weight: bold;
+      border: 2px solid  rgb(10, 8, 0);
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+
+  }
+
+  span{
+      
+      height: 100%;
+      width: 0;
+      border-radius: 25px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: 0.5s;
+  }
+
+  button:hover span{
+      width: 100%;
+
+  }
+
+  button:hover{
+      border: none; 
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .footer-links {
+    list-style-type: none;
+  }

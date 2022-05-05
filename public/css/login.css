@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(../img/neybg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;  
+}
+
+form{
+    background: rgb(214,214,220);
+    background: linear-gradient(90deg, rgba(214,214,220,1) 57%, rgba(249,249,249,1) 99%);
+    width: 300px;
+    margin: 300px auto;
+    text-align: center;
+    height: 200px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
